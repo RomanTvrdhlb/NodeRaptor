@@ -1,0 +1,43 @@
+.main-tabs{
+
+
+    &__close{
+        display: flex;
+        align-items: center;
+        grid-gap: 11px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--cl-c),1.0);
+    }
+
+    &__projects{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 18px;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(48px, 4.615vw, 54px);
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 2.1fr 1fr;
+
+        @include tablet{
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 24px;
+    }
+}

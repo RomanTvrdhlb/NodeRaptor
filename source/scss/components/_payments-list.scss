@@ -1,0 +1,95 @@
+.payments-list{
+    background: #12181F;
+    border-radius: 12px;
+    padding: 24px 32px 0;
+    grid-gap: 18px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include mobile{
+        &:before{
+            content: "";
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            left: -15px;
+            bottom: 0;
+            background: #12181F;
+            z-index: -1;
+        }
+    }
+
+    &__item{
+        padding: 8px 14px;
+        display: grid;
+        grid-template-columns: 25px 65px 50px 1fr;
+        grid-gap: 29px;
+
+
+        &:nth-child(even){
+            background-color: rgba(var(--bg-l),0.6);
+            border-radius: 6px;
+        }
+
+        &:last-child{
+            padding: 6px 11px;
+            width: calc(100% + 64px);
+            margin-left: -32px;
+            background: rgba(var(--bg-g),0.6);
+            border-radius: 0px 0px 12px 12px;
+
+            @include mobile{
+                background: transparent;
+                padding: 0 0 11px;
+            }
+        }
+
+        @include tablet{
+            // grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 25px 65px 50px 50px;
+            justify-content: space-between;
+        }
+
+        @include mobile{
+            grid-gap: 10px;
+        }
+    }
+
+    &__name{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--cl-c),1.0);
+    }
+
+    &__value{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(var(--cl-a),1.0);
+    }
+
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 8px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--cl-c),1.0);
+        padding: 11px 0;
+        grid-column: span 4;
+
+        @include mobile{
+            padding: 0 0 11px;
+        }
+    }
+}

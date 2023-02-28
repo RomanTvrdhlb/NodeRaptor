@@ -1,0 +1,10 @@
+.index-first{
+    padding: clamp(24px, 2.564vw, 30px) 0 0;
+    background-color: rgba(var(--bg-e),1.0);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(34px, 4.786vw, 56px);    
+    }
+}

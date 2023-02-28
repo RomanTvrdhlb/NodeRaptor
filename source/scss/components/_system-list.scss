@@ -1,0 +1,51 @@
+.system-list{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:12px 36px;
+
+
+    &__name{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #728A96;
+
+        
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        grid-gap: 6px;
+        justify-content: center;
+        position: relative;
+        &--mode{
+            grid-column: span 3;  
+        }
+
+        &:not(:nth-child(2),:nth-child(1)){
+            &::before{
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 17px;
+                top: 50%;
+                left: -18px;
+                transform: translateY(-50%);
+                background-color: rgba(var(--bg-g),1.0);
+            }
+        }
+    }
+
+    &__value{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}

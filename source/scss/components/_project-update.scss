@@ -1,0 +1,56 @@
+.project-update{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+
+    @include small-tablet{
+        display: none;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 24px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 8px;
+    }
+
+    &__name{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--cl-a),1.0);
+        transition: all .4s;
+
+        &:hover{
+            color: rgba(var(--cl-e),1.0);
+        }
+    }
+
+    &__date{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #728A96;
+    }
+
+    &__title{
+        width: 100%;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--br-a);
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: rgba(var(--cl-a),1.0);
+    }
+}
