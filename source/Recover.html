@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="En-en">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-login.html')
+
+  <main >
+
+    <section class="create-section" style="background-image: url(/img/index/noise.png)">
+      <div class="container">
+        <div class="create-section__box">
+          <form action="#" class="main-form recover-form">
+            <div class="main-form__status main-form__status--warning active">
+              <span class="main-form__status-descr">
+                <svg width='20' height='18'>
+                  <use href='img/sprite/sprite.svg#error'></use>
+                </svg>
+                If your account exists, you will receive an email shortly with further instructions.
+              </span>
+            </div>
+            <span class="main-form__title">
+              Enter email to recover password
+            </span>
+            
+            <div class="main-form__box">
+              <span class="main-form__more">
+                Return to 
+                <a href="Login.html">
+                  Log In
+                </a>
+            </span>
+        
+                <ul class="main-form__list">
+                    <li class="main-form__item">
+                        <label class='main-form__label' for="email">
+                            <input type="email" class='main-form__input' placeholder="E-mail">
+                            <button class='main-form__clear main-form__label-btn'>
+                              <svg width='16' height='16'>
+                                <use href='img/sprite/sprite.svg#close'></use>
+                              </svg>
+                            </button>
+                        </label>
+                    </li>
+                </ul>
+        
+                <button class="main-form__btn green-button">
+                  Register
+              </button>
+                
+            </div>
+            
+        </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

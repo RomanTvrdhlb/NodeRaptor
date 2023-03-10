@@ -38,7 +38,7 @@ body {
 }
 
 main {
-  padding-top: var(--header-height);
+  // padding-top: var(--header-height);
   transition: padding-top .5s linear;
   min-width: 0 !important;
   flex: 1 0 auto;
@@ -314,4 +314,12 @@ fieldset {
   .close svg {
     pointer-events: none;
   }
+}
+
+.error{
+  border: 1px solid var(--br-d) !important;
+}
+
+.done{
+  border: 1px solid var(--br-b) !important;
 }

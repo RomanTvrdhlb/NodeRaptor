@@ -6,349 +6,68 @@
   @include('partials/header.html')
 
   <main >
-    <div class="index" data-tabs-parrent>
-    <section class="index-first">
-      <div class="container">
-        <div class="index-first__box">
-          <div class="index-first__cards">
-            <ul class="cards-list">
-              <li class="cards-list__item">
-                <div class="main-card">
-                  <div class="main-card__inner">
-                    <span class="main-card__name">Nodes</span>
-                    <span class="main-card__value">2</span>
-                  </div>
-                </div>
-              </li>
-              <li class="cards-list__item">
-                <div class="main-card">
-                  <div class="main-card__inner">
-                    <span class="main-card__name">Expenses</span>
-                    <span class="main-card__value">$0.00036</span>
-                  </div>
-                  <div class="main-card__wrapper main-card__wrapper--mode">
-                    <button class="main-card__btn">
-                      <span class="main-card__btn-name">Daily</span>
-                      <svg width="16" height="18">
-                        <use href='img/sprite/sprite.svg#icon2'></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards-list__item">
-                <div class="main-card">
-                  <div class="main-card__inner">
-                    <span class="main-card__name">Expenses</span>
-                    <span class="main-card__value">$0.00036
-                      <button class="main-card__value-btn"><svg width="16" height="16">
-                          <use href='img/sprite/sprite.svg#icon3'></use>
-                        </svg></button>
-                    </span>
-                  </div>
-                  <div class="main-card__wrapper">
-                    <span class="main-card__date">10 day 12:23:01
-                      <button class="main-card__date-btn"><svg width="14" height="14">
-                          <use href='img/sprite/sprite.svg#icon4'></use>
-                        </svg></button>
-                    </span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <ul class="tabs-nav">
-            <li class="tabs-nav__item">
-              <button class="tabs-nav__btn active" type="button" data-tab="1">Projects</button>
-            </li>
-            <li class="tabs-nav__item">
-              <button class="tabs-nav__btn" type="button" data-tab="2">Nodes</button>
-            </li>
-            <li class="tabs-nav__item">
-              <button class="tabs-nav__btn" type="button" data-tab="3">History</button>
-            </li>
-            <li class="tabs-nav__item">
-              <button class="tabs-nav__btn" type="button" data-tab="4">Referrals</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <section class="index-second">
+    <section class="create-section">
       <div class="container">
-        <div class="index-second__box">
-            <ul class="main-tabs">
-              <li class="main-tabs__item active" data-tab-content="1">
-                <div class="main-tabs__projects">
-                  <button class="main-tabs__close">
-                    <svg width="6" height="8">
-                      <use href='img/sprite/sprite.svg#arrow-l'></use>
-                    </svg>
-                    Go Back
-                  </button>
-                  <div class="main-tabs__wrapper">
-                    <div class="main-tabs__inner">
-                      <div class="project-card">
-                        <div class="project-card__top">               
-                            <div class="project-card__wrapper">
-                              <div class="project-card__icon">
-                                <svg width='72' height='72'>
-                                  <use href='img/sprite/sprite.svg#project'></use>
-                                </svg>
-                              </div>
-                              <h3 class="project-card__title">Minima</h3>
-                              <span class="project-card__status">Active</span>
-                              <button class="project-card__like">
-                                <svg width="14" height="12">
-                                  <use href='img/sprite/sprite.svg#heart'></use>
-                                </svg>
-                                562
-                              </button>
-                              <p>The blockchain orchestrates assets shared by participants into the Dataverse: data,
-                                algorithms, software, storage and computation to enable. </p>
-                            </div>
-                        </div>
-                        <div class="project-card__middle">
-                          <ul class="project-card__list">
-                            <li class="project-card__item">
-                              <a href="#" class="main-button" data-btn-modal="3">
-                                <svg width="17" height="17">
-                                  <use href='img/sprite/sprite.svg#icon5'></use>
-                                </svg>
-                                Website
-                              </a>
-                            </li>
-                            <li class="project-card__item">
-                              <a href="#" class="main-button">
-                                <svg width="16" height="16">
-                                  <use href='img/sprite/sprite.svg#icon6'></use>
-                                </svg>
-                                Explorer
-                              </a>
-                            </li>
-                            <li class="project-card__item">
-                              <div class='select' data-select>
-                                <div class='select__header'>
-                                  <input type="hidden" class="select__input" name="sort" value="1">
-                                  <span class='select__current' data-id="1">
-                                    <svg width='18' height='18'>
-                                      <use href='img/sprite/sprite.svg#icon7'></use>
-                                    </svg>
-                                    Wallet
-                                  </span>
-                                </div>
-                                <div class='select__body'>
-                                  <ul class='select__wrapp'>
-                                    <li class='select__item' data-id="2" data-choice='choosen'>
-                                      <svg width='18' height='18'>
-                                        <use href='img/sprite/sprite.svg#icon7'></use>
-                                      </svg>
-                                      Wallet</li>
-                                      <li class='select__item' data-id="3" data-choice='choosen'>
-                                        <svg width='18' height='18'>
-                                          <use href='img/sprite/sprite.svg#icon7'></use>
-                                        </svg>
-                                        Wallet</li>
-                                    <li class='select__item' data-id="1" data-choice='choosen'>
-                                      <svg width='18' height='18'>
-                                        <use href='img/sprite/sprite.svg#icon7'></use>
-                                      </svg>
-                                      Wallet</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                          <ul class="social-list">
-                            <li class="social-list__item">
-                              <a href="#" class="social-list__link">
-                                <svg width='20' height='20'>
-                                  <use href='img/sprite/sprite.svg#tg'></use>
-                                </svg>
-                              </a>
-                            </li>
-                            <li class="social-list__item">
-                              <a href="#" class="social-list__link">
-                                <svg width='20' height='20'>
-                                  <use href='img/sprite/sprite.svg#twitter'></use>
-                                </svg>
-                              </a>
-                            </li>
-                            <li class="social-list__item">
-                              <a href="#" class="social-list__link"><svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#dis'></use>
-                              </svg></a>
-                            </li>
-                            <li class="social-list__item">
-                              <a href="#" class="social-list__link">
-                                <svg width='20' height='20'>
-                                  <use href='img/sprite/sprite.svg#reddit'></use>
-                                </svg>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="project-card__bottom">
-                          <ul class="project-sublist">
-                            <li class="project-sublist__item">
-                              <span class="project-sublist__name">Launched</span>
-                              <span class="project-sublist__status">2023-02-15</span>
-                            </li>
-                            <li class="project-sublist__item">
-                              <span class="project-sublist__name">Phase</span>
-                              <span class="project-sublist__status">testnet-beta-2</span>
-                            </li>
-                            <li class="project-sublist__item">
-                              <span class="project-sublist__name">Incentivised</span>
-                              <span class="project-sublist__status">Yes</span>
-                            </li>
-                            <li class="project-sublist__item">
-                              <span class="project-sublist__name">Rewards</span>
-                              <span class="project-sublist__status">TBA</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="project-update">
-                        <h3 class="project-update__title">Minima Update</h3>
-                        <ul class="project-update__list">
-                          <li class="project-update__item">
-                             <a href="#" class="project-update__name">✅ Node version was upgraded to 1.1.1</a>
-                             <span class="project-update__date">January 9, 2023</span>
-                          </li>
-                          <li class="project-update__item">
-                            <a href="#" class="project-update__name">📣 Testnet status update</a>
-                            <span class="project-update__date">January 22, 2023</span>
-                         </li>
-                         <li class="project-update__item">
-                          <a href="#" class="project-update__name">🤝 Awards announcement</a>
-                          <span class="project-update__date">January 29, 2023</span>
-                       </li>
-                        </ul>
-                      </div>
-                    </div>
-                    
-                    <div class="main-tabs__content">
-                      <div class="main-rate">
-                        <ul class="main-rate__list">
-                          <li class="main-rate__item">
-                            <span class="main-rate__title">
-                              Shared CPU
-                              <a href="#" class="main-rate__link">
-                                <svg width="15" height="14">
-                                  <use href='img/sprite/sprite.svg#icon9'></use>
-                                </svg>
-                              </a>
-                            </span>
-                            <div class="main-rate__card">
-                              <span class="main-rate__price">$4.85 <span class="mode-text"> / Mo</span></span>
-                              <span class="main-rate__value">+$1 Service</span>
-                            </div>
-                          </li>
-                          <li class="main-rate__item">
-                            <span class="main-rate__title main-rate__title--mode">
-                              Dedicated CPU
-                              <a href="#" class="main-rate__link">
-                                <svg width="15" height="14">
-                                  <use href='img/sprite/sprite.svg#icon9'></use>
-                                </svg>
-                              </a>
-                            </span>
-                            <div class="main-rate__card main-rate__card--mode">
-                              <span class="main-rate__price">$6.98 <span class="mode-text"> / Mo</span></span>
-                              <span class="main-rate__value">+$1 Service</span>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="main-tabs__system">
-                        <ul class="system-list">
-                          <li class="system-list__item system-list__item--mode">
-                            <span class="system-list__name">System Requirements:</span>
-                          </li>
-                          <li class="system-list__item">
-                            <span class="system-list__name">CPU</span>
-                            <span class="system-list__value">4 Core</span>
-                          </li>
-                          <li class="system-list__item">
-                            <span class="system-list__name">RAM</span>
-                            <span class="system-list__value">8 GB</span>
-                          </li>
-                          <li class="system-list__item">
-                            <span class="system-list__name">SSD</span>
-                            <span class="system-list__value">200 GB</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <ul class="payments-list">
-                        <li class="payments-list__item">
-                          <span class="payments-list__name"></span>
-                          <span class="payments-list__name">Hardware</span>
-                          <span class="payments-list__name">Service</span>
-                          <span class="payments-list__name">Total</span>
-                        </li>
-                        <li class="payments-list__item">
-                          <span class="payments-list__name">1h</span>
-                          <span class="payments-list__value">$0.007</span>
-                          <span class="payments-list__value">$0.0013</span>
-                          <span class="payments-list__value green-text">$0.0083</span>
-                        </li>
-                        <li class="payments-list__item">
-                          <span class="payments-list__name">1d</span>
-                          <span class="payments-list__value">$0.17</span>
-                          <span class="payments-list__value">$0.03</span>
-                          <span class="payments-list__value green-text">$0.20</span>
-                        </li>
-                        <li class="payments-list__item">
-                          <span class="payments-list__name">7d</span>
-                          <span class="payments-list__value">$1.22</span>
-                          <span class="payments-list__value">$0.14</span>
-                          <span class="payments-list__value green-text">$1.36</span>
-                        </li>
-                        <li class="payments-list__item">
-                          <span class="payments-list__name">30d</span>
-                          <span class="payments-list__value">$5.01</span>
-                          <span class="payments-list__value">$1.00</span>
-                          <span class="payments-list__value green-text">$6.10</span>
-                        </li>
-                        <li class="payments-list__item">
-                          <span class="payments-list__bottom">
-                            <svg width="8" height="14">
-                              <use href='img/sprite/sprite.svg#icon8'></use>
-                            </svg>
-                            Payments are charged hourly
-                          </span>
-                        </li>
-                      </ul>
-                      <button class="green-btn">Go</button>
-                    </div>
-                  </div>
-  
-  
-                </div>
-              </li>
-              <li class="main-tabs__item"  data-tab-content="2">
-                <p>tab 2</p>
-              </li>
-              <li class="main-tabs__item"  data-tab-content="3">
-                <p>tab 3</p>
-              </li>
-              <li class="main-tabs__item"  data-tab-content="4">
-                <p>tab 4</p>
-              </li>
-            </ul>
+        <div class="create-section__box">
+          <form action="#" class="main-form">
+            <span class="main-form__title">
+                Create new account
+            </span>
+            <button class="main-form__btn grey-button">
+                Continue with Google
+            </button>
+        
+            <p class="main-form__descr">
+               Or continue with email
+            </p>
+        
+            <div class="main-form__box">
+                <ul class="main-form__list">
+                    <li class="main-form__item">
+                        <label class='main-form__label' for="email">
+                            <input type="email" class='main-form__input'>
+                            <button class='main-form__label-btn'>
+                                
+                            </button>
+                        </label>
+                    </li>
+                    <li class="main-form__item">
+                        <label class='main-form__label' for="email">
+                            <input type="email" class='main-form__input'>
+                            <button class='main-form__label-btn'>
+                                
+                            </button>
+                        </label>
+                    </li>
+                </ul>
+        
+                <p class="main-form__info">
+                    By clicking Register, you agree to the 
+                    <a href="#">Terms</a>
+                </p>
+        
+            </div>
+        
+            <button class="main-form__btn green-buton">
+                Register
+            </button>
+        
+            <span class="main-form__more">
+                Already have an account?
+                <a href="#">
+                    Login
+                </a>
+            </span>
+        
             
-            <p class="index-second__disclaimer">Disclaimer: NodeRaptor’s services are limited to node setup, monitoring, and cloud-based infrastructure. We dod not collect or distribute node rewards, do not interact or communicate with blockchain teams regarding reward distribution, and cannot advise users on reward-related matters. We cannot apply for any incentivized testnets or limited-access devnets for you, either. For networks that have not yet released a token on the mainnet, NodeRaptor cannot provide any information regarding when (or if) such a token will be launched.</p>
+        </form>
         </div>
       </div>
     </section>
-  </div>
+
   </main>
 
-  @include('partials/footer.html')
-  @include('partials/modals.html')
 </body>
 <script src="js/main.js"></script>
 

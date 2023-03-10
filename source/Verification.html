@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="En-en">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-login.html')
+
+  <main >
+
+    <section class="create-section" style="background-image: url(/img/index/noise.png)">
+      <div class="container">
+        <div class="create-section__box">
+          <form action="#" class="main-form verification-form">
+            <div class="main-form__status main-form__status--error active">
+              <span class="main-form__status-descr">
+                <svg width='20' height='18'>
+                  <use href='img/sprite/sprite.svg#error'></use>
+                </svg>
+                Required field
+              </span>
+            </div>
+            <span class="main-form__title">
+              E-mail Verification
+            </span>
+            
+            <div class="main-form__box">
+         
+              <p class="main-form__descr">
+                The verification code email may be judged as spam, please check spam folder as well.
+             </p>
+             <span class="main-form__more">
+              Sent verification code to nod***@gmail.com
+          </span>
+                
+                <ul class="main-form__sublist">
+                  <li class="main-form__sublist-item">
+                    <label class='main-form__label' for="email">
+                      <input type="number" class='main-form__input main-form__input--mode done' value="5">
+                  </label>
+                  </li>
+                  <li class="main-form__sublist-item">
+                    <label class='main-form__label' for="email">
+                      <input type="number" class='main-form__input main-form__input--mode error'>
+                  </label>
+                  </li>
+                  <li class="main-form__sublist-item">
+                    <label class='main-form__label' for="email">
+                      <input type="number" class='main-form__input main-form__input--mode'>
+                  </label>
+                  </li>
+                  <li class="main-form__sublist-item">
+                    <label class='main-form__label' for="email">
+                      <input type="number" class='main-form__input main-form__input--mode'>
+                  </label>
+                  </li>
+                  <li class="main-form__sublist-item">
+                    <label class='main-form__label' for="email">
+                      <input type="number" class='main-form__input main-form__input--mode'>
+                  </label>
+                  </li>
+                  <li class="main-form__sublist-item">
+                    <label class='main-form__label' for="email">
+                      <input type="number" class='main-form__input main-form__input--mode'>
+                  </label>
+                  </li>
+                </ul>
+                <button class="main-form__forgot">
+                  Resend
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#refresh'></use>
+                  </svg>
+                </button>
+
+                <button class="main-form__btn grey-button">
+                  Log In
+              </button>
+        
+            </div>
+        
+            <span class="main-form__more main-form__more--mode">
+              Have trouble receiving verification code? Contact us.
+                <a href="Login.html">
+                  Contact Support
+                </a>
+            </span>
+            </div>
+        
+          
+            
+        </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

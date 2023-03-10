@@ -18,6 +18,7 @@ export default {
   mobileBurger: document.querySelector('.mobile-menu .burger'),
   // mobileMenu: document.querySelector('.header-box__nav'),
   select: document.querySelectorAll('.select'),
+  passForm: [...document.querySelector('.main-form')],
 
   header: document.querySelector("header"),
   game: document.getElementById('game'),

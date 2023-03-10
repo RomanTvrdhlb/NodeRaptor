@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="En-en">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-login.html')
+
+  <main>
+
+    <section class="create-section" style="background-image: url(/img/index/noise.png)">
+      <div class="container">
+        <div class="create-section__box">
+          <form action="#" class="main-form">
+            <div class="main-form__status main-form__status--error active">
+              <span class="main-form__status-descr">
+                <svg width='20' height='18'>
+                  <use href='img/sprite/sprite.svg#error'></use>
+                </svg>
+                Invalid username or password
+              </span>
+            </div>
+            <span class="main-form__title">
+              Log in to your NodeRaptor
+            </span>
+            <div class="main-form__wrapper">
+              <div class="main-form__box">
+                <button class="main-form__btn grey-button">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#google'></use>
+                  </svg>
+                  Continue with Google
+                </button>
+                <p class="main-form__descr">
+                  Or continue with email
+                </p>
+                <ul class="main-form__list">
+                  <li class="main-form__item">
+                    <label class='main-form__label' for="email">
+                      <input type="email" class='main-form__input error' placeholder="E-mail">
+                      <button class='main-form__clear main-form__label-btn'>
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#close'></use>
+                        </svg>
+                      </button>
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label class='main-form__label' for="email">
+                      <input type="email" class='main-form__password main-form__input done' value="qwerty123"
+                        placeholder="Password">
+                      <button class='main-form__show main-form__label-btn'>
+                      </button>
+                    </label>
+                  </li>
+                </ul>
+
+           
+
+              </div>
+
+              <button class="main-form__forgot">
+                Forgot password?
+              </button>
+
+              <div class="main-form__inner">
+                <button class="main-form__btn green-button">
+                  Register
+                </button>
+  
+                <span class="main-form__more">
+                  Don't have an account yet?
+                  <a href="Create.html">
+                    Register
+                  </a>
+                </span>
+              </div>
+            </div>
+
+
+            
+
+
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
