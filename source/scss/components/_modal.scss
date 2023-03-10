@@ -1,0 +1,36 @@
+.modal{
+    z-index: 3;
+    &__box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-gap: 48px;
+    }
+
+    &__status{
+        padding: 15px 25px;
+        background: rgba(var(--cl-f),0.2);
+        border-radius: 4px;
+        
+
+        &-about{
+
+            font-family:  var(--font-family);
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: rgba(var(--cl-f),1.0);
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            grid-gap: 8px;
+            white-space: nowrap;
+
+            @include mobile{
+                white-space: normal;
+            }
+        }
+    }
+}

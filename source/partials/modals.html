@@ -1,9 +1,63 @@
-<div class="overlay none fixed-block" data-overlay>
+<div class="overlay fixed-block" data-overlay>
+  <div class="overlay__background">
+    <picture>
+      <source type='image/webp' srcset='img/index/noise.webp'>
+      <img width='1600' height='800' src='img/index/noise.png' alt='image'>
+    </picture>
+  </div>
 
-
-  <div class="modal" data-popup="1">
+  <div class="modal " data-popup="1">
     <div class="modal__box" role="dialog" aria-modal="true">
       <button class="close modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="modal__status modal__status--error">
+        <span class="modal__status-about">
+          <svg width='20' height='18'>
+            <use href='img/sprite/sprite.svg#error'></use>
+          </svg>
+          Invalid email address. Only use numbers, letters, or +-_ characters.
+        </span>
+      </div>
+
+      <div class="modal-account">
+        <h4 class="modal-account__title">Create new account</h4>
+       
+
+        <div class="modal-account__middle">
+          <button class="connect-btn">
+            <svg width='13' height='13'>
+              <use href='img/sprite/sprite.svg#google'></use>
+            </svg>
+            Continue with Google
+          </button>
+          <span class="modal-account__text">Or continue with email</span>
+          <form action="#" class="modal-account__form">
+            <label for="#" class="modal-account__label">
+              <input type="text" class="modal-account__input modal-account__input--accepted" placeholder="Enter your email">
+              <button class="modal-account__input-btn"><svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#close'></use>
+              </svg></button>
+            </label>
+            <label for="#" class="modal-account__label">
+              <input type="text" class="modal-account__input modal-account__input--error" placeholder="Password ">
+              <button class="modal-account__input-btn"><svg width='16' height='13'>
+                <use href='img/sprite/sprite.svg#hide'></use>
+              </svg></button>
+            </label>
+          </form>
+          <span class="modal-account__text">By clicking Register, you agree to the <a href="#" class="modal-account__link">Terms</a></span>
+        </div>
+
+               
+        <div class="modal-account__bottom">
+          <button class="modal-btn">Register</button>
+          <span class="modal-account__bottom-text">Already have an account?</span>
+          <a href="#" class="modal-account__bottom-link  green-text">Login</a>
+        </div>
+       
+        
+      </div>
+
+      
     </div>
   </div>
 
