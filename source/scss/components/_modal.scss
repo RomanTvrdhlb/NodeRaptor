@@ -1,5 +1,10 @@
 .modal{
     z-index: 3;
+
+    width: 90vw;
+    max-width: 370px;
+ 
+
     &__box{
         display: flex;
         align-items: center;
@@ -12,7 +17,6 @@
         background: rgba(var(--cl-f),0.2);
         border-radius: 4px;
         
-
         &-about{
 
             font-family:  var(--font-family);
@@ -31,6 +35,25 @@
             @include mobile{
                 white-space: normal;
             }
+
+            svg{
+                fill:rgba(var(--bg-f),1.0);
+            }
+        }
+
+        &--cancel{
+            background: rgba(var(--bg-p),0.2);
+
+            .modal__status-about{
+                color: rgba(var(--cl-d),1.0);
+                svg{
+                    fill: rgba(var(--bg-q),1.0);
+                }
+            }
         }
     }
+}
+
+.modal-recover{
+    max-width: 374px;
 }

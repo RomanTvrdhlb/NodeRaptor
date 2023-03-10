@@ -1,6 +1,6 @@
 .modal-account{
-    max-width: 370px;
-    min-width: 320px;
+    // max-width: 370px;
+    // min-width: 320px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,15 @@
         line-height: 30px;
         text-align: center;
         color: rgba(var(--cl-a),1.0);
+
+        br{
+            display: none;
+
+            @include ios{
+                display: inline;
+            }
+        }
+
     }
 
     &__text{
@@ -67,6 +76,7 @@
         flex-direction: column;
         grid-gap: 24px;
         align-items: center;
+
     }
 
     &__form{
@@ -114,5 +124,28 @@
             border: 1px solid var(--br-d);
         }
 
+    }
+
+    &__password{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--cl-d),1.0);
+        text-align: center;
+    }
+
+    &__return{
+        display: flex;
+        align-items: center;
+        grid-gap: 8px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(var(--cl-a),1.0);
     }
 }
