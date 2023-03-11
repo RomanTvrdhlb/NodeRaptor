@@ -1,5 +1,5 @@
 .grey-button{
-    background: rgba(var(--bg-k),1.0);
+    background: rgba(var(--bg-l),1.0);
     border-radius: 6px;
     font-family: var(--font-family);
     font-style: normal;
@@ -11,6 +11,20 @@
     align-items: center;
     justify-content: center;
     grid-gap: 8px;
+    transition: all .4s;
+
+    &:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #728A96;
+    }
+
+
+    &:active{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #728A96;
+    }
+
+    &.active{
+        background:  rgba(var(--bg-k),1.0);
+    }
  
 }
 
@@ -31,5 +45,17 @@
 
     &:hover{
         background-color: rgba(var(--bg-o),1.0);
+    }
+
+    &:active{
+        background: rgba(var(--bg-m),1.0);
+    }
+
+    &.active{
+        background:  rgba(var(--bg-k),1.0);
+    }
+
+    &:disabled{
+        background:  rgba(var(--bg-l),1.0);
     }
 }

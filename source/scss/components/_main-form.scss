@@ -26,6 +26,7 @@
         display: flex;
         flex-direction: column;
         grid-gap: 18px;
+        align-items: center;
     }
 
     &__list{
@@ -55,7 +56,7 @@
     &__input{
         height: 48px;
         background-color: transparent;
-        text-indent: 24px;
+        text-indent: 18px;
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 500;
@@ -64,6 +65,10 @@
         line-height: 20px;
         color: rgba(var(--cl-a),1.0);
         border: 1px solid rgba(var(--bg-d),1.0);
+
+        &::placeholder{
+            color: rgba(var(--bg-k),1.0);
+        }
 
         &--mode{
             height: 72px;
@@ -102,7 +107,7 @@
     &__descr{
         font-family: var(--font-family);
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 12px;
         line-height: 18px;
         text-align: center;
@@ -117,10 +122,16 @@
         line-height: 18px;
         text-align: center;
         color: rgba(var(--cl-c),1.0);
+        
         a{
             color: rgba(var(--cl-a),1.0);
             text-decoration: underline;
             text-underline-offset: 2.5px;
+            transition:  all .4s;
+
+            &:hover{
+                color: rgba(var(--cl-g),1.0);
+            }
         }
     }
 
@@ -141,7 +152,7 @@
             transition: all .4s;
 
             &:hover{
-                color: rgba(var(--cl-g),1.0);
+                 color: rgba(var(--cl-g),1.0);
             }
         }
 
@@ -162,8 +173,13 @@
         background-position: center;
         background-size: contain;
         stroke: rgba(var(--bg-k),1.0);
+        transition: all .4s;
 
         &.view{
+            background-image: url(/img/sprite/hide.svg);  
+        }
+
+        &:hover{
             background-image: url(/img/sprite/hide.svg);  
         }
     }
@@ -171,6 +187,18 @@
     &__clear{
         opacity: 0;
         visibility: hidden;
+
+        svg{
+            fill: rgba(var(--bg-k),1.0);
+            transition: all .4s;
+        }
+
+        &:hover{
+            svg{
+            // fill: rgba(var(--bg-f),0.8);
+            fill: rgba(var(--bg-k),1.0);
+    }
+}
 
         &.active{
             opacity: 1;
@@ -188,8 +216,15 @@
         font-size: 14px;
         line-height: 20px;
         color: rgba(var(--cl-d),1.0);
+        transition: all .4s;
+        width: fit-content;
+        
         svg{
             fill:transparent;
+        }
+
+        &:hover{
+            color: rgba(var(--cl-l),1.0);
         }
     }
 
@@ -215,12 +250,16 @@
         &.active{
             transform: translateY(calc((100% + 48px) * -1));
             opacity: 1;
+
+            @include mobile{
+                transform: translateY(calc((100% + 24px) * -1));
+            }
         }
         
         &-descr{
             font-family:  var(--font-family);
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 12px;
             line-height: 18px;
             text-align: center;
